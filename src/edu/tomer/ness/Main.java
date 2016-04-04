@@ -10,7 +10,7 @@ public class Main{
     public static void main(String[] args) {
         Timer timer = new Timer();
 
-        MyTimerTask task = new MyTimerTask();
+        MyTimerTask task = new MyTimerTask(timer, 20);
 
         timer.scheduleAtFixedRate(task, 0, 1000 * 1);
 
